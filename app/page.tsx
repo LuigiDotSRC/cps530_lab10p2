@@ -79,7 +79,12 @@ export default function Home() {
     // <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
     <main className="relative flex justify-center items-center w-full h-screen"> 
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full"></canvas>
-      <p className="absolute text-[#edf9ff] font-bold text-9xl text-shadow-lg">End of Fall 2025 Semester</p>
+      <div className="absolute flex flex-col items-center">
+        <p className="text-[#edf9ff] font-bold text-9xl text-shadow-lg">End of Fall 2025 Semester</p>
+        <p className="text-[#f0fffd] text-2xl mt-4 text-shadow-md">this page was made using the nextjs framework alongside react + typescript and styled using tailwindcss.</p>
+        <p className="text-[#f0fffd] text-2xl mt-4 text-shadow-md">the page is then hosted on vercel using the github deployments + vercel integration.</p>
+        <p className="text-[#f0fffd] text-2xl mt-4 text-shadow-md">there were not many issues other than fighting the ts compiler and implementing the draw loop</p>
+      </div>
     </main>
     //</div>
   );
